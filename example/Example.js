@@ -6,23 +6,36 @@ import {Editor, editorStateFromHtml, editorStateToHtml, editorStateFromRaw, edit
 import RAW from './initialState/raw'
 import HTML from './initialState/html'
 
+import emoji from 'ld-emoji'
+import html from 'ld-html'
+let plugins = [emoji, html]
+
 export default class ExampleEditor extends Component {
   constructor(props) {
     super(props)
+    /* examples of initial state */
     const INITIAL_STATE = editorStateFromRaw(RAW)
+    //const INITIAL_STATE = editorStateFromRaw({})
     //const INITIAL_STATE = editorStateFromHtml(HTML)
+    //const INITIAL_STATE = editorStateFromHtml('<div />')
     this.state = { value: INITIAL_STATE }
   }
 
   onChange(editorState) {
     this.setState({ value: editorState })
-    console.log(editorStateToHtml(editorState))
-    console.log(editorStateToJSON(editorState))
+    /* You would normally save this to your database here instead of logging it */
+    //console.log(editorStateToHtml(editorState))
+    //console.log(editorStateToJSON(editorState))
   }
 
   render() {
     return (
       <Editor
+        theme={this.props.theme}
+        plugins={plugins}
+        inline={['bold', 'italic', 'dropcap']}
+        blocks={['ol', 'h2', 'quote']}
+        autofocus={true}
         editorState={this.state.value}
         placeholder='Text'
         uploadImageCallBack={uploadImageCallBack}
@@ -40,7 +53,7 @@ function uploadImageCallBack(file) {
         const src = window.URL.createObjectURL(file)
         //const src = 'http://imgur.com/yrwFoXT.jpg'
         resolve({ src: src });
-      }, 2000)
+      }, 4000)
     }
   )
 }
