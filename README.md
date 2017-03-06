@@ -1,5 +1,7 @@
 # [last-draft-example](http://lastdraft.vace.nz)
 
+![](https://raw.githubusercontent.com/vacenz/last-draft/master/example/public/screenshot.gif)
+
 Example of using last-draft Draft.js Editor
 
 ## Development
