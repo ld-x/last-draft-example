@@ -10,8 +10,8 @@
   z-index: 1;
 }
 
-.paragraph + .paragraph {
-  margin-top: 2rem;
+.paragraph {
+  margin-bottom: 2rem;
 }
 
 .public-DraftEditor-content figure {
@@ -56,28 +56,24 @@
 
 /* blocks */
 .ld-blockquote {
-  margin: 12px 0 40px 0;
-  padding: 1rem 2rem;
-  border-left: 2px solid #3192e7;
+  margin: 0;
+  padding: 0;
+  padding-left: 2rem;
+  border: none;
+  border-left: 2px solid #eee;
 }
 
 .ld-quote {
   display: block;
-  color: #223A87;
-  font-style: italic;
-  font-size: 24px;
-  font-weight: 700;
+  color: #faeBd7;
+  font-size: 32px;
   line-height: 1.2;
-  margin: 4rem 0 2rem 0;
 }
 .ld-quote:first-child {
   margin-top: 0;
 }
 .header {
   color: #223A87;
-}
-.ld-hashtag {
-  color: red !important;
 }
 .ld-unordered-list {}
 .ld-ordered-list {}
@@ -104,23 +100,11 @@
 .ld-image-block {}
 .ld-image-placeholder-block {}
 .ld-image-block-button {}
-.ld-video-block-wrapper {}
-.ld-video-block {}
-.ld-video-button {}
-.ld-emoji {}
-.ld-emoji-modal {}
-.ld-emoji-close-icon {}
-.ld-emoji-block-button {}
 
 /* buttons */
-.ld-button-align-left {}
-.ld-button-align-center {}
-.ld-button-align-right {}
 .ld-button-blockquote {}
 .ld-button-bold {}
 .ld-button-close {}
-.ld-button-cross {}
-.ld-button-emoji {}
 .ld-button-error {}
 .ld-button-header {}
 .ld-button-image {}
@@ -130,11 +114,11 @@
 .ld-button-quote {}
 .ld-button-unordered-list {}
 .ld-button-unlink {}
-.ld-button-video {}
 
 /* entities */
 .ld-link {}
 .ld-hashtag {}
+.ld-mention {}
 
 /* sidebar */
 .ld-sidebar {}
@@ -142,8 +126,6 @@
 .ld-sidemenu-wrapper {}
 .ld-sidemenu {}
 .ld-sidemenu-button {}
-.ld-sidemenu-items {}
-.ld-sidemenu-item {}
 
 /* inline toolbar */
 .ld-toolbar-wrapper {}

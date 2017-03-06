@@ -4,92 +4,54 @@ export default {
       "type": "LINK",
       "mutability": "MUTABLE",
       "data": {
-        "url": "https://draft-js-plugins.com"
+        "url": "http://vace.nz"
       }
     },
     "1": {
-      "type": "LINK",
-      "mutability": "MUTABLE",
+      "type": "MENTION",
+      "mutability": "IMMUTABLE",
       "data": {
-        "url": "https://isekivacenz.mit-license.org"
-      }
-    },
-    "2": {
-      "type": "LINK",
-      "mutability": "MUTABLE",
-      "data": {
-        "url": "https://github.com/vacenz/last-draft#docs"
+        "url": "https://github.com/steveniseki",
+        "avatar": "https://avatars1.githubusercontent.com/u/6695114?v=3&s=400",
+        "name": "Steven Iseki"
       }
     }
   },
   "blocks": [
     {
-      "key": "ag6qs",
-      "text": "Last Draft",
-      "type": "quote",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
       "key": "59kd9",
-      "text": "Last Draft is a ReactJS Rich Text editor built on top of Facebook's draft.js featuring:",
+      "text": "An editor built with Draft.js ",
       "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "bqjdr",
-      "text": "Emojis! 🏄🌠🏀",
-      "type": "ordered-list-item",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "4164j",
-      "text": "Full support for import and export to 🖊JSON and html",
-      "type": "ordered-list-item",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "1sd0p",
-      "text": "A Fully customizable inline toolbar and Sidebar",
-      "type": "ordered-list-item",
       "depth": 0,
       "inlineStyleRanges": [
         {
-          "offset": 0,
-          "length": 47,
-          "style": "BOLD"
+          "offset": 21,
+          "length": 8,
+          "style": "color-0074D9"
         }
       ],
       "entityRanges": [],
       "data": {}
     },
     {
-      "key": "c4sc5",
-      "text": "#hastags and links http://vace.nz",
-      "type": "ordered-list-item",
+      "key": "6l1hu",
+      "text": "Made with ❤️ by vace.nz ",
+      "type": "unstyled",
       "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "1pdm1",
-      "text": "Custom Image and Video blocks",
-      "type": "ordered-list-item",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
+      "inlineStyleRanges": [
+        {
+          "offset": 16,
+          "length": 7,
+          "style": "color-C1E1A6"
+        }
+      ],
+      "entityRanges": [
+        {
+          "offset": 16,
+          "length": 7,
+          "key": 0
+        }
+      ],
       "data": {}
     },
     {
@@ -101,22 +63,9 @@ export default {
       "entityRanges": [],
       "data": {
         "type": "image",
-        "src": "http://i.imgur.com/lN7yyxV.jpg",
-        "caption": "Prayer of the Rollerboys!",
+        "src": "http://i.imgur.com/HYXFLl7.jpg",
+        "caption": "Cool image",
         "display": "big"
-      }
-    },
-    {
-      "key": "d9v1o",
-      "text": "",
-      "type": "atomic",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {
-        "src": "https://www.youtube.com/embed/HBHJ0XGZfLs",
-        "type": "video",
-        "caption": "Fanta by easyFun",
       }
     },
     {
@@ -125,58 +74,28 @@ export default {
       "type": "atomic",
       "depth": 0,
       "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "ef02e",
+      "text": "",
+      "type": "atomic",
+      "depth": 0,
+      "inlineStyleRanges": [],
       "entityRanges": [],
       "data": {
-        "src": "https://player.vimeo.com/video/713300",
-        "type": "video"
+        "src": "https://player.vimeo.com/video/29658258",
+        "type": "video",
+        "caption": "Awesome video"
       }
     },
     {
-      "key": "350ub",
-      "text": "Docs",
-      "type": "header-two",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "cc4j7",
-      "text": "Documentation for Last Draft is here 🎉",
+      "key": "aep41",
+      "text": "",
       "type": "unstyled",
       "depth": 0,
       "inlineStyleRanges": [],
-      "entityRanges": [
-        {
-          "offset": 32,
-          "length": 4,
-          "key": 2
-        }
-      ],
-      "data": {}
-    },
-    {
-      "key": "gcc6",
-      "text": "License",
-      "type": "header-two",
-      "depth": 0,
-      "inlineStyleRanges": [],
       "entityRanges": [],
-      "data": {}
-    },
-    {
-      "key": "kst0",
-      "text": "Last Draft is MIT licensed.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": [
-        {
-          "offset": 14,
-          "length": 3,
-          "key": 1
-        }
-      ],
       "data": {}
     }
   ]

@@ -8,16 +8,37 @@ class App extends Component {
     super(props)
     this.state = {
       theme: {
-        backgroundColor: '#181818',
-        color: '#fafafa',
-        highlight: '#9d1d20'
+        backgroundColor: '#fff',
+        color: '#404040',
+        highlight: '#faeBd7'
       }
     }
+  }
+
+  onColorChange (color, themeName) {
+    let updatedTheme = this.state.theme
+    updatedTheme[themeName] = color
+    this.setState({ theme: updatedTheme })
   }
 
   render () {
     return (
       <div>
+      	<div className="title">
+      		<h1>
+      			<span className="blue">L</span>
+      			<span className="red">A</span>
+      			<span className="purple">S</span>
+      			<span className="green">T</span>
+            <span style={{marginLeft: '1rem'}}></span>
+
+      			<span className="pink">D</span>
+            <span className="blue">R</span>
+      			<span className="red">A</span>
+      			<span className="purple">F</span>
+      			<span className="green">T</span>
+      		</h1>
+        </div>
         <Example theme={this.state.theme} />
       </div>
     )

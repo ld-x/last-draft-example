@@ -1,23 +1,29 @@
-/* override the quote for the Last Draft header style */
-/* Last-draft specific styles - dark theme */
-
-@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+/* override some last Draft styles */
 
 /* blocks */
 .ld-blockquote {
-  margin: 12px 0 40px 0;
-  padding: 1rem 2rem;
-  border-left: 2px solid #80172F;
+  margin: 0;
+  padding: 0;
+  padding-left: 2rem;
+  border: none;
+  border-left: 2px solid #eee;
 }
 .ld-quote {
   display: block;
-  color: #80172F;
-  font-style: italic;
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 4rem 0 2rem 0;
-  font-family: 'Shadows Into Light', cursive;
+  color: #faeBd7;
+  font-size: 32px;
+}
+
+.ld-hashtag {
+  color: #0f9 !important;
+}
+.ld-link {
+  color: #93f !important;
+}
+.ld-mention {
+  background: rgb(236, 236, 234);
+  color: #000;
+  text-decoration: none;
 }
 
 html {
@@ -37,12 +43,50 @@ body {
 }
 
 #root {
-  margin: 2.5rem;
+  margin: 2rem;
   margin-top: 1rem;
 }
 @media (min-width: 768px) {
   #root {
-    margin: 5rem;
-    margin-top: 8rem;
+    margin: 4rem;
   }
+}
+
+a {
+  color: #2F8BE6;
+}
+
+h1 {
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+}
+h1 > span {
+  font-weight: 400;
+}
+h1 .blue {
+  text-transform: uppercase;
+  color: #0cf;
+}
+h1 .pink {
+  text-transform: uppercase;
+  color: #e54cb5;
+}
+h1 .red {
+  text-transform: uppercase;
+  color: #fc6669;
+}
+h1 .green {
+  text-transform: uppercase;
+  color: #0f9;
+}
+h1 .purple {
+  text-transform: uppercase;
+  color: #93f;
+}
+
+.title {
+  margin: 0 auto;
 }
