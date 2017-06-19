@@ -31,18 +31,20 @@
   },
   "dependencies": {
     "draft-js": "0.10.0",
-    "last-draft": "2.0.0",
+    "immutable": "3.7.4",
+    "last-draft": "2.3.3",
     "ld-audio": "2.0.0",
     "ld-color-picker": "2.0.0",
     "ld-emoji": "2.0.0",
     "ld-gif": "2.0.0",
     "ld-html": "2.0.0",
-    "ld-mention": "2.0.0",
+    "ld-mention": "2.1.0",
     "ld-sticker": "2.0.0",
     "ld-todo": "2.0.0",
     "ld-video": "2.0.0",
-    "react": ">=15.3.1",
-    "react-dom": ">=15.3.1"
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "styled-components": "2.1.0"
   },
   "keywords": [
     "ld",
